@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2010 The Android Open Source Project
- * Copyright (C) 2017-2022 The LineageOS Project
+ * Copyright (C) 2017-2022 The PadrePioUI Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -62,12 +62,12 @@ public class PlatLogoActivity extends Activity {
         private int mDarkest;
         private float mOffset;
 
-        // LineageOS logo drawable
+        // PadrePioUI logo drawable
         private final Drawable mLogo;
 
         public PBackground(Context context) {
             randomizePalette();
-            // LineageOS logo
+            // PadrePioUI logo
             mLogo = context.getResources().getDrawable(R.drawable.logo_lineage, context.getTheme());
             mLogo.setColorFilter(new ColorMatrixColorFilter(WHITE)); // apply color filter
             mLogo.setBounds(0, 0, 360, 180); // Aspect ratio 2:1
@@ -199,7 +199,7 @@ public class PlatLogoActivity extends Activity {
             }
             canvas.restore();
 
-            // Draw LineageOS Logo drawable
+            // Draw PadrePioUI Logo drawable
             canvas.save();
             {
                 canvas.translate((-360 / 2f) * mRadius / BASE_SCALE,
